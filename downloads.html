@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OverFive Launcher" />
+  <title>Launcher Demo - OverFive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0.0" />
+  <script src="assets/js/app.js?v=2.0.0" defer></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner"></div>
+    </div>
+    
+    <header>
+      <nav>
+        <a class="logo-container" href="index.html" style="text-decoration:none;">
+          <div class="logo-badge" id="header-logo-target" aria-label="OverFive">
+            <img src="assets/img/logo.png" alt="OverFive logo">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </a>
+
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="downloads.html" class="nav-link" data-i18n="nav_download">Download</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="servers.html" class="nav-link" data-i18n="nav_servers">Servers</a></li>
+          <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        </ul>
+        
+
+        <div class="nav-actions">
+          <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="lang-toggle" type="button" aria-label="Language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 8 6 6" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m4 14 6-6 2-3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 5h12" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7 2 1 3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m22 22-5-10-5 10" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 18h6" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364-1.414-1.414M7.05 7.05 5.636 5.636m12.728 0-1.414 1.414M7.05 16.95l-1.414 1.414" />
+              <circle cx="12" cy="12" r="4" stroke-width="2"></circle>
+            </svg>
+          </button>
+          <a class="btn-primary" id="header-cta" href="downloads.html" data-i18n="cta_header">View Launcher Demo</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main style="padding-top:96px;">
+      
+    <section id="download" class="download-section">
+      
+      <div class="download-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="none" poster="assets/img/logo.png" controlslist="nodownload" disablepictureinpicture>
+          <source src="assets/media/OverFive.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="download-container">
+        <h2 class="download-title gradient-text" data-i18n="download_title">Download</h2>
+        <p class="download-intro" data-i18n="download_intro">This is an unlaunched portfolio demonstration. The launcher is not available for download.</p>
+
+        <div class="download-card">
+          <div class="download-icon-wrapper">
+            <div class="download-icon" aria-hidden="true">
+              <img src="assets/img/logo.png" alt="">
+            </div>
+          </div>
+
+          <h3 class="download-version" data-i18n="download_demo_title">OverFive Launcher — Website Demo</h3>
+
+          <div class="download-badges">
+            <span class="download-pill" data-i18n="download_demo_badge">Portfolio demonstration</span>
+          </div>
+
+          <div class="download-combo">
+            <button class="download-combo__btn download-combo__btn--disabled" type="button" disabled>
+              <span class="download-combo__meta">
+                <span class="download-label" data-i18n="download_pack_label">Download unavailable</span>
+                <span class="download-sub" data-i18n="download_pack_sub">Portfolio demo only</span>
+              </span>
+              <span class="download-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+                </svg>
+              </span>
+            </button>
+            <p class="download-combo__hint" data-i18n="download_pack_hint">No installer or anti-cheat package is provided with this demo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-badge" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </div>
+        <p class="footer-description" data-i18n="footer_desc">Next-gen launcher for RolePlay servers</p>
+        <p class="footer-love" data-i18n="footer_made">Made with &lt;3 by The Boyz</p>
+        <p class="footer-copyright" data-i18n="footer_copyright">(c) 2026 OverFive. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "EndPoint": "62.3.14.81:30120",
+    "Data": {
+      "svMaxclients": 0,
+      "clients": 234,
+      "protocol": 0,
+      "hostname": "^3Diamond RP - 📢^4discord.gg/Diamond-RP 📢^2 ",
+      "gametype": "Roleplay",
+      "mapname": "Diamond RP - | MAP",
+      "resources": [
+        "[hidden 209 items]"
+      ],
+      "connectEndPoints": [
+        "62.3.14.81:30120"
+      ],
+      "server": "62.3.14.81:30120",
+      "iconVersion": 0,
+      "enhancedHostSupport": true,
+      "burstPower": 0,
+      "upvotePower": 0,
+      "vars": {
+        "OWNER": "ArisKM",
+        "banner_connecting": "https://cdn.discordapp.com/attachments/1003011594327957575/1049738058230149230/connecting.gif",
+        "banner_detail": "https://media.discordapp.net/attachments/863534637938769941/1151947737630249120/dbaner.gif",
+        "gamename": "gta5",
+        "gametype": "Roleplay",
+        "language": "Persian",
+        "locale": "fa-IR",
+        "mapname": "Diamond RP - | MAP",
+        "onesync_enabled": "true",
+        "sv_enforceGameBuild": "3095",
+        "sv_enhancedHostSupport": "true",
+        "sv_lan": "false",
+        "sv_maxClients": "700",
+        "sv_poolSizesIncrease": "",
+        "sv_projectDesc": " 📢discord.gg/Diamond-RP ",
+        "sv_projectName": "^3Diamond RP ",
+        "sv_pureLevel": "2",
+        "sv_replaceExeToSwitchBuilds": "false",
+        "sv_scriptHookAllowed": "false",
+        "sv_sessionId": "3fa56df6dd137f9a",
+        "tags": "RolePlay, Diamond, IRFive, RP, DiamondRP",
+        "txAdmin-version": "8.0.3"
+      },
+      "sv_sessionId": "3fa56df6dd137f9a"
+    }
+  },
+
+  {
+    "EndPoint": "5.57.37.154:30120",
+    "Data": {
+      "svMaxclients": 0,
+      "clients": 0,
+      "protocol": 0,
+      "hostname": "ZenThoR Test",
+      "gametype": "Development",
+      "mapname": "ZenThoR | Map",
+      "resources": [
+        "[hidden 297 items]"
+      ],
+      "connectEndPoints": [
+        "5.57.37.154:30120"
+      ],
+      "server": "5.57.37.154:30120",
+      "iconVersion": 0,
+      "enhancedHostSupport": true,
+      "burstPower": 0,
+      "upvotePower": 0,
+      "vars": {
+        "Discord": "https://discord.gg/SWkPhsgmXB",
+        "Founder": "AmirHsz , MaiReX , AleX",
+        "ambulance": "0",
+        "banner_connecting": "https://cdn.discordapp.com/guilds/1369684711714197535/users/563016765169467392/banners/010a69e7b0dedd9a134e678aa21272db.webp?size=1024",
+        "banner_detail": "https://cdn.discordapp.com/guilds/1369684711714197535/users/563016765169467392/banners/010a69e7b0dedd9a134e678aa21272db.webp?size=1024",
+        "gamename": "gta5",
+        "locale": "fa-IR",
+        "mechanic": "0",
+        "mt": "0",
+        "onesync_enabled": "true",
+        "police": "0",
+        "sheriff": "0",
+        "sv_enforceGameBuild": "3095",
+        "sv_enhancedHostSupport": "true",
+        "sv_lan": "false",
+        "sv_maxClients": "120",
+        "sv_poolSizesIncrease": "",
+        "sv_projectDesc": "Test Server",
+        "sv_projectName": "ZenThoR Test V2.0",
+        "sv_pureLevel": "0",
+        "sv_replaceExeToSwitchBuilds": "false",
+        "sv_scriptHookAllowed": "false",
+        "sv_sessionId": "9274b70bf217c92b",
+        "tags": "Development Service",
+        "taxi": "0"
+      },
+      "sv_sessionId": "9274b70bf217c92b"
+    }
+  }
+]

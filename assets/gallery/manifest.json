@@ -1,0 +1,17 @@
+[
+  {
+    "src": "assets/gallery/server-1.jpg",
+    "title": "server-1",
+    "alt": "server-1"
+  },
+  {
+    "src": "assets/gallery/server-2.jpg",
+    "title": "server-2",
+    "alt": "server-2"
+  },
+  {
+    "src": "assets/gallery/server-3.jpg",
+    "title": "server-3",
+    "alt": "server-3"
+  }
+]

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OverFive Launcher" />
+  <title>Servers - OverFive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0.0" />
+  <script src="assets/js/app.js?v=2.0.0" defer></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="nav-spacer"></div>
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner"></div>
+    </div>
+    
+    <header>
+      <nav>
+        <a class="logo-container" href="index.html" style="text-decoration:none;">
+          <div class="logo-badge" id="header-logo-target" aria-label="OverFive">
+            <img src="assets/img/logo.png" alt="OverFive logo">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </a>
+
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="downloads.html" class="nav-link" data-i18n="nav_download">Download</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="servers.html" class="nav-link" data-i18n="nav_servers">Servers</a></li>
+          <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        </ul>
+        
+
+        <div class="nav-actions">
+          <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="lang-toggle" type="button" aria-label="Language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 8 6 6" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m4 14 6-6 2-3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 5h12" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7 2 1 3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m22 22-5-10-5 10" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 18h6" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364-1.414-1.414M7.05 7.05 5.636 5.636m12.728 0-1.414 1.414M7.05 16.95l-1.414 1.414" />
+              <circle cx="12" cy="12" r="4" stroke-width="2"></circle>
+            </svg>
+          </button>
+          <a class="btn-primary" id="header-cta" href="downloads.html" data-i18n="cta_header">View Launcher Demo</a>
+        </div>
+      </nav>
+    </header>
+    
+   <main style="padding-top:96px;">
+    <section class="servers-bg">
+  <div class="servers-bg__video" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="none" poster="assets/img/server-poster.jpg">
+      <source src="assets/media/OverFive.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+  <section class="servers-hero">
+    <div class="container">
+      <div class="servers-hero__head">
+        <h1 class="servers-title gradient-text" data-i18n="servers_title">Servers</h1>
+        <p class="servers-subtitle" data-i18n="servers_subtitle">Filter, sort, and find the best RP server in one click.</p>
+      </div>
+    </div>
+  </section>
+      <form class="servers-filters" id="serversFilters" aria-label="Server filters">
+        <div class="filter-row">
+          <label class="filter-search">
+            <span class="sr-only" data-i18n="servers_search_label">Search</span>
+            <input id="serverSearch" type="search" data-i18n-placeholder="servers_search_placeholder" placeholder="Search servers..." autocomplete="off" />
+          </label>
+
+          <div class="filter-group" role="group" data-i18n-aria="servers_status_label">
+            <button type="button" class="chip is-active" data-filter="status" data-value="all" data-i18n="servers_status_all">All</button>
+            <button type="button" class="chip" data-filter="status" data-value="online" data-i18n="servers_status_online">Online</button>
+            <button type="button" class="chip" data-filter="status" data-value="offline" data-i18n="servers_status_offline">Offline</button>
+          </div>
+        </div>
+
+<div class="filter-row">
+          <fieldset class="filter-box">
+            <legend data-i18n="servers_mode_label">Mode</legend>
+            <label class="check">
+              <input type="checkbox" value="rp" name="mode">
+              <span class="check-ui" aria-hidden="true"></span>
+              <span class="check-label" data-i18n="servers_mode_rp">RP</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" value="freeroam" name="mode">
+              <span class="check-ui" aria-hidden="true"></span>
+              <span class="check-label" data-i18n="servers_mode_freeroam">Freeroam</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filter-box">
+            <legend data-i18n="servers_lang_label">Language</legend>
+            <label class="check">
+              <input type="checkbox" value="fa" name="lang">
+              <span class="check-ui" aria-hidden="true"></span>
+              <span class="check-label" data-i18n="servers_lang_fa">Persian</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" value="en" name="lang">
+              <span class="check-ui" aria-hidden="true"></span>
+              <span class="check-label" data-i18n="servers_lang_en">English</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filter-box">
+            <legend data-i18n="servers_sort_label">Sort</legend>
+            <div class="select-field" data-select>
+              <button type="button" class="select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="select-trigger-label" data-select-label data-i18n="servers_sort_players">Players (high to low)</span>
+                <span class="select-trigger-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </button>
+              <ul class="select-menu" role="listbox">
+                <li class="select-option is-selected" role="option" aria-selected="true" data-value="players" data-i18n="servers_sort_players">Players (high to low)</li>
+                <li class="select-option" role="option" data-value="ping" data-i18n="servers_sort_ping">Ping (low to high)</li>
+                <li class="select-option" role="option" data-value="rating" data-i18n="servers_sort_rating">Rating (high to low)</li>
+                <li class="select-option" role="option" data-value="name" data-i18n="servers_sort_name">Name (A-Z)</li>
+              </ul>
+              <select id="sortBy" class="select-native" aria-hidden="true" tabindex="-1">
+                <option value="players" data-i18n="servers_sort_players">Players (high to low)</option>
+                <option value="ping" data-i18n="servers_sort_ping">Ping (low to high)</option>
+                <option value="rating" data-i18n="servers_sort_rating">Rating (high to low)</option>
+                <option value="name" data-i18n="servers_sort_name">Name (A-Z)</option>
+              </select>
+            </div>
+            <p class="filter-hint" data-i18n="servers_filter_hint">Live data is loaded securely from the OverFive API.</p>
+          </fieldset>
+        </div>
+      </form>
+
+      <div class="servers-meta" aria-live="polite">
+        <div>
+          <span id="resultCount">0</span>
+          <span data-i18n="servers_results_label">servers found</span>
+        </div>
+        <button class="servers-refresh" id="serversRefresh" type="button" data-i18n="servers_refresh">Refresh servers</button>
+      </div>
+
+      <section class="servers-grid" id="serversGrid" aria-live="polite">
+        <div class="servers-placeholder" id="serversPlaceholder" role="status">Loading servers...</div>
+      </section>
+
+</main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-badge" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </div>
+        <p class="footer-description" data-i18n="footer_desc">Next-gen launcher for RolePlay servers</p>
+        <p class="footer-love" data-i18n="footer_made">Made with &lt;3 by The Boyz</p>
+        <p class="footer-copyright" data-i18n="footer_copyright">(c) 2026 OverFive. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

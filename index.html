@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OverFive Launcher - Next-gen RP launcher for FiveM servers." />
+  <title>OverFive Launcher - Next-gen RP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0.0" />
+  <script src="assets/js/app.js?v=2.0.0" defer></script>
+</head>
+
+<body>
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="page-loader__spinner"></div>
+  </div>
+
+  <div id="intro" class="intro" aria-hidden="false">
+    <div class="intro__panels" aria-hidden="true">
+      <div class="intro__panel left"></div>
+      <div class="intro__panel right"></div>
+    </div>
+
+    <div class="intro__center">
+      <div class="intro__logo" id="intro-logo" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+      <div class="intro__brand fire">OVERFIVE</div>
+      <div class="intro__tag" data-i18n="intro_tag">Launch. Connect. Rule.</div>
+    </div>
+
+    <button id="intro-skip" class="intro__skip" type="button" data-i18n="skip">Skip</button>
+  </div>
+
+  <div class="app-wrapper">
+    
+    <header>
+      <nav>
+        <a class="logo-container" href="index.html" style="text-decoration:none;">
+          <div class="logo-badge" id="header-logo-target" aria-label="OverFive">
+            <img src="assets/img/logo.png" alt="OverFive logo">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </a>
+
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="downloads.html" class="nav-link" data-i18n="nav_download">Download</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="servers.html" class="nav-link" data-i18n="nav_servers">Servers</a></li>
+          <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        </ul>
+        
+
+        <div class="nav-actions">
+          <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="lang-toggle" type="button" aria-label="Language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 8 6 6" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m4 14 6-6 2-3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 5h12" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7 2 1 3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m22 22-5-10-5 10" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 18h6" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364-1.414-1.414M7.05 7.05 5.636 5.636m12.728 0-1.414 1.414M7.05 16.95l-1.414 1.414" />
+              <circle cx="12" cy="12" r="4" stroke-width="2"></circle>
+            </svg>
+          </button>
+          <a class="btn-primary" id="header-cta" href="downloads.html" data-i18n="cta_header">View Launcher Demo</a>
+        </div>  
+      </nav>
+    </header>
+    
+
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-icon-container">
+          <div class="hero-icon" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+        </div>
+
+        <h1 class="hero-title" id="hero-title" data-i18n="hero_title">OverFive</h1>
+        <p class="hero-subtitle gradient-text" id="hero-subtitle" data-i18n="hero_subtitle">Beyond FiveM</p>
+        <p class="hero-description" id="hero-description" data-i18n="hero_desc">Next-gen launcher for RolePlay servers</p>
+
+        <div class="cta-buttons">
+          <a class="btn-large btn-download" id="cta-download" href="downloads.html" data-i18n="cta_download">View Launcher Demo</a>
+          <a class="btn-large btn-servers" id="cta-servers" href="servers.html" data-i18n="cta_servers">Browse Servers</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="features-container">
+        <h2 class="features-title gradient-text" data-i18n="features_title">Why OverFive?</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="feature-title" id="feature1-title" data-i18n="feature1_title">Lightning Fast</h3>
+            <p class="feature-description" data-i18n="feature1_desc">
+              Smart caching and CDN tuning launch the game and servers in seconds.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="feature1_list_1">Delta updates with minimal size</li>
+              <li data-i18n="feature1_list_2">Quick boot with saved profiles</li>
+              <li data-i18n="feature1_list_3">Smart resource tuning for smoother FPS</li>
+            </ul>
+            <p class="feature-note" data-i18n="feature1_note">Note: Launch time depends on your connection.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h3 class="feature-title" id="feature2-title" data-i18n="feature2_title">Secure File Health</h3>
+            <p class="feature-description" data-i18n="feature2_desc">
+              Integrity checks and built-in anti-cheat keep files clean and safe.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="feature2_list_1">Integrity check every launch</li>
+              <li data-i18n="feature2_list_2">Auto quarantine for suspicious files</li>
+              <li data-i18n="feature2_list_3">Mod versioning with signatures</li>
+            </ul>
+            <p class="feature-note" data-i18n="feature2_note">Note: Verified mod lists stay up to date.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="feature-title" id="feature3-title" data-i18n="feature3_title">Smart Server Discovery</h3>
+            <p class="feature-description" data-i18n="feature3_desc">
+              Fast search with role, language, and ping filters to find the best RP.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="feature3_list_1">Filter by RP / Freeroam / Hardcore</li>
+              <li data-i18n="feature3_list_2">Live ping and capacity</li>
+              <li data-i18n="feature3_list_3">Server profiles with gallery and rules</li>
+            </ul>
+            <p class="feature-note" data-i18n="feature3_note">Note: Data comes from verified APIs.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="feature-title" id="feature4-title" data-i18n="feature4_title">Real RP Experience</h3>
+            <p class="feature-description" data-i18n="feature4_desc">
+              From roleplay checklists to voice and recommended mods, you are ready.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="feature4_list_1">Server tiers: Casual / Serious / Hardcore</li>
+              <li data-i18n="feature4_list_2">Recommended mods per server</li>
+              <li data-i18n="feature4_list_3">Fast report and feedback flow</li>
+            </ul>
+            <p class="feature-note" data-i18n="feature4_note">Note: Rules show before you join.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-badge" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </div>
+        <p class="footer-description" data-i18n="footer_desc">Next-gen launcher for RolePlay servers</p>
+        <p class="footer-love" data-i18n="footer_made">Made with &lt;3 by The Boyz</p>
+        <p class="footer-copyright" data-i18n="footer_copyright">(c) 2026 OverFive. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

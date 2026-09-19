@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OverFive Launcher" />
+  <title>About - OverFive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0.0" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js?v=2.0.0" defer></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner"></div>
+    </div>
+    
+    <header>
+      <nav>
+        <a class="logo-container" href="index.html" style="text-decoration:none;">
+          <div class="logo-badge" id="header-logo-target" aria-label="OverFive">
+            <img src="assets/img/logo.png" alt="OverFive logo">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </a>
+
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="downloads.html" class="nav-link" data-i18n="nav_download">Download</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="servers.html" class="nav-link" data-i18n="nav_servers">Servers</a></li>
+          <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        </ul>
+        
+
+        <div class="nav-actions">
+          <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="lang-toggle" type="button" aria-label="Language">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 8 6 6" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m4 14 6-6 2-3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 5h12" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7 2 1 3" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m22 22-5-10-5 10" />
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 18h6" />
+            </svg>
+          </button>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364 6.364-1.414-1.414M7.05 7.05 5.636 5.636m12.728 0-1.414 1.414M7.05 16.95l-1.414 1.414" />
+              <circle cx="12" cy="12" r="4" stroke-width="2"></circle>
+            </svg>
+          </button>
+          <a class="btn-primary" id="header-cta" href="downloads.html" data-i18n="cta_header">View Launcher Demo</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="page" style="padding-top:96px;">
+    <section id="about" class="features-section">
+      <div class="features-container">
+        <h2 class="features-title gradient-text" data-i18n="about_title">About</h2>
+        <p class="features-intro" data-i18n="about_intro">OverFive is a pro launcher for Persian RP servers: fast, safe, and modern.</p>
+      </div>
+    </section>
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__wrap">
+          <div class="about-hero__badge">
+            <span class="dot"></span>
+            <span data-i18n="about_badge">About OverFive</span>
+          </div>
+
+          <h1 class="about-hero__title">
+            <span class="gradient-text">OverFive</span>
+            <span class="about-hero__title2" data-i18n="about_title2">Next-gen launcher for Persian RP</span>
+          </h1>
+
+          <p class="about-hero__desc" data-i18n="about_desc">
+            OverFive was built to make RP entry faster and more professional. From first run to server join, it is simple and unified.
+          </p>
+
+          <div class="about-hero__stats">
+            <div class="stat-card">
+              <div class="stat-num gradient-text" data-i18n="about_stat_fast">Fast</div>
+              <div class="stat-label" data-i18n="about_stat_fast_label">Launch under 10 seconds</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num gradient-text" data-i18n="about_stat_safe">Safe</div>
+              <div class="stat-label" data-i18n="about_stat_safe_label">Integrity checks + anti-cheat</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num gradient-text" data-i18n="about_stat_persian">Persian</div>
+              <div class="stat-label" data-i18n="about_stat_persian_label">Built for Persian RP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container">
+        <div class="grid-3">
+          <article class="glass-card">
+            <h3 class="glass-title" data-i18n="about_glass1_title">Why was OverFive built?</h3>
+            <p class="glass-text" data-i18n="about_glass1_text">
+              To make RP entry simple, fast, and hassle-free.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <h3 class="glass-title" data-i18n="about_glass2_title">What makes us different?</h3>
+            <p class="glass-text" data-i18n="about_glass2_text">
+              We focus on UX, file safety, and live server data.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <h3 class="glass-title" data-i18n="about_glass3_title">Our goal</h3>
+            <p class="glass-text" data-i18n="about_glass3_text">
+              A professional ecosystem for Persian RolePlay servers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="split-card">
+            <div class="split-card__icon">IR</div>
+            <div>
+              <h3 class="split-card__title" data-i18n="about_split1_title">Persian-first UI/UX</h3>
+              <p class="split-card__text" data-i18n="about_split1_text">
+                Full RTL, clean typography, and shortcuts for key actions.
+              </p>
+            </div>
+          </div>
+
+          <div class="split-card">
+            <div class="split-card__icon">RP</div>
+            <div>
+              <h3 class="split-card__title" data-i18n="about_split2_title">RP-first community</h3>
+              <p class="split-card__text" data-i18n="about_split2_text">
+                From rules to mods, everything fits RP needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="split-card">
+            <div class="split-card__icon">24/7</div>
+            <div>
+              <h3 class="split-card__title" data-i18n="about_split3_title">24/7 stability</h3>
+              <p class="split-card__text" data-i18n="about_split3_text">
+                Always-on monitoring and zero-downtime updates.
+              </p>
+            </div>
+          </div>
+
+          <div class="split-card">
+            <div class="split-card__icon">FX</div>
+            <div>
+              <h3 class="split-card__title" data-i18n="about_split4_title">Smart performance</h3>
+              <p class="split-card__text" data-i18n="about_split4_text">
+                Resource tuning and preloads for fast entry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container">
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-avatar">OF</div>
+            <div class="team-meta">
+              <h3 class="team-name" data-i18n="about_team1_name">Founder</h3>
+              <p class="team-role" data-i18n="about_team1_role">Product / Vision</p>
+            </div>
+            <p class="team-desc" data-i18n="about_team1_desc">Leads product direction and the launcher experience.</p>
+            <div class="team-tags">
+              <span class="tag">Roadmap</span><span class="tag">UX</span><span class="tag">Community</span>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar">DEV</div>
+            <div class="team-meta">
+              <h3 class="team-name" data-i18n="about_team2_name">Core Dev</h3>
+              <p class="team-role" data-i18n="about_team2_role">Launcher / Backend</p>
+            </div>
+            <p class="team-desc" data-i18n="about_team2_desc">Focused on performance, security, and reliable updates.</p>
+            <div class="team-tags">
+              <span class="tag">Performance</span><span class="tag">Security</span><span class="tag">Updates</span>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar">CM</div>
+            <div class="team-meta">
+              <h3 class="team-name" data-i18n="about_team3_name">Community</h3>
+              <p class="team-role" data-i18n="about_team3_role">Support / Moderation</p>
+            </div>
+            <p class="team-desc" data-i18n="about_team3_desc">Direct support and feedback management.</p>
+            <div class="team-tags">
+              <span class="tag">Support</span><span class="tag">Discord</span><span class="tag">Feedback</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <span class="t-phase" data-i18n="about_phase1_label">Phase 1</span>
+                <span class="t-date" data-i18n="about_phase1_date">Now</span>
+              </div>
+              <h3 class="t-title" data-i18n="about_phase1_title">Launcher and UI polish</h3>
+              <p class="t-text" data-i18n="about_phase1_text">Stability, UX, and RTL details are the priority.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <span class="t-phase" data-i18n="about_phase2_label">Phase 2</span>
+                <span class="t-date" data-i18n="about_phase2_date">Next</span>
+              </div>
+              <h3 class="t-title" data-i18n="about_phase2_title">Server search + mod support</h3>
+              <p class="t-text" data-i18n="about_phase2_text">Richer server lists and smarter mod handling.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <span class="t-phase" data-i18n="about_phase3_label">Phase 3</span>
+                <span class="t-date" data-i18n="about_phase3_date">Soon</span>
+              </div>
+              <h3 class="t-title" data-i18n="about_phase3_title">Rank and profile system</h3>
+              <p class="t-text" data-i18n="about_phase3_text">Roleplay profiles, achievements, and personal stats.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <span class="t-phase" data-i18n="about_phase4_label">Phase 4</span>
+                <span class="t-date" data-i18n="about_phase4_date">Later</span>
+              </div>
+              <h3 class="t-title" data-i18n="about_phase4_title">Unified ecosystem</h3>
+              <p class="t-text" data-i18n="about_phase4_text">Launcher, server portal, and community in one flow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <h3 class="cta-strip__title" data-i18n="about_cta_title">Ready to jump into RP?</h3>
+            <p class="cta-strip__text" data-i18n="about_cta_text">This website is an unlaunched portfolio demonstration; no launcher download is provided.</p>
+          </div>
+          <a class="cta-strip__btn" href="downloads.html" data-i18n="about_cta_button">View Launcher Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-badge" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="">
+          </div>
+          <span class="logo-text gradient-text">OverFive</span>
+        </div>
+        <p class="footer-description" data-i18n="footer_desc">Next-gen launcher for RolePlay servers</p>
+        <p class="footer-love" data-i18n="footer_made">Made with &lt;3 by The Boyz</p>
+        <p class="footer-copyright" data-i18n="footer_copyright">(c) 2026 OverFive. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
